@@ -1,6 +1,4 @@
-import { borderRadius } from "@mui/system";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -21,9 +19,9 @@ export default function Home() {
           rel='stylesheet'
         />
       </Head>
-      <div>
+      <div style={{ marginTop: 96 }}>
         <img
-          src='https://avatars.githubusercontent.com/u/49785954?v=4'
+          src='/Photo.png'
           style={{ width: "90px", height: "90px", borderRadius: "100%" }}
         />
       </div>
@@ -32,7 +30,7 @@ export default function Home() {
         I'm passionate about web development, open-source software and UI
         design.
       </p>
-      <p>
+      <p style={{ marginBottom: 42 }}>
         Currently working at{" "}
         <a
           style={{ color: "lightblue", textDecoration: "underline" }}
@@ -42,8 +40,16 @@ export default function Home() {
         </a>{" "}
         as a Junior Software Engineer.
       </p>
-      <ul style={{ listStyleType: "none", margin: 0, padding: 0 }}>
-        <li>
+      <h3 style={{ marginBottom: 4 }}>Find me at:</h3>
+      <ul
+        style={{
+          listStyleType: "none",
+          margin: 0,
+          padding: 0,
+          marginBottom: 64,
+        }}
+      >
+        <li style={{ marginBottom: "24px", marginTop: 12 }}>
           <a
             style={{ color: "#ea4c89", textDecoration: "underline" }}
             href='https://dribbble.com/AleksandrShchilkin'
@@ -51,7 +57,7 @@ export default function Home() {
             Dribbble
           </a>
         </li>
-        <li>
+        <li style={{ margin: "24px 0" }}>
           <a
             style={{ textDecoration: "underline" }}
             href='https://github.com/shchilkin'
@@ -59,7 +65,7 @@ export default function Home() {
             GitHub
           </a>
         </li>
-        <li>
+        <li style={{ margin: "24px 0" }}>
           <a
             style={{ color: "#0077b5", textDecoration: "underline" }}
             href='https://www.linkedin.com/in/aleksandrshchilkin/'
@@ -68,6 +74,16 @@ export default function Home() {
           </a>
         </li>
       </ul>
+      <a
+        style={{
+          padding: "16px 32px",
+          backgroundColor: "#606060",
+          borderRadius: 12,
+        }}
+        href='mailto:shchilkin@gmail.com'
+      >
+        Contact me
+      </a>
     </div>
   );
 }
