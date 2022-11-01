@@ -50,15 +50,32 @@ const Home = () => {
         I'm passionate about web development, open-source software and UI
         design.
       </p>
-      <p style={{ marginBottom: 42, opacity: 0.8 }}>
+      <p style={{ opacity: 0.8 }}>
         Currently working at{" "}
         <a
-          style={{ color: "lightblue", textDecoration: "underline" }}
+          style={{
+            color: "#00A5F6",
+            textDecoration: "underline",
+            opacity: 1,
+          }}
           href='https://dreambroker.com'
         >
           Dream Broker Oy
         </a>{" "}
         as a Junior Software Engineer.
+      </p>
+      <p style={{ marginBottom: 24, opacity: 0.8 }}>
+        Link to my{" "}
+        <a
+          style={{
+            color: "#00A5F6",
+            textDecoration: "underline",
+            opacity: 1,
+          }}
+          href='/cv.pdf'
+        >
+          current resume
+        </a>{" "}
       </p>
       <h3 style={{ marginBottom: 4 }}>Find me at:</h3>
       <ul
