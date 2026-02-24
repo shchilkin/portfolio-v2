@@ -1,20 +1,6 @@
 import { SocialLinkType } from "../../types";
-import styled from "styled-components";
+import styles from "./SocialLink.module.css";
 
-const StyledLink = styled.a`
-  color: "white";
-  opacity: 0.8;
-  &:hover {
-    opacity: 1;
-    color: ${(props) => props && props.color};
-    text-decoration: underline;
-  }
-  &:active {
-    opacity: 1;
-    color: ${(props) => props && props.color};
-    text-decoration: underline;
-  }
-`;
 const SocialLink: React.FunctionComponent<SocialLinkType> = ({
   color = "#fff",
   name,
@@ -22,9 +8,13 @@ const SocialLink: React.FunctionComponent<SocialLinkType> = ({
 }) => {
   return (
     <li style={{ margin: "12px 0" }}>
-      <StyledLink color={color} href={url}>
+      <a
+        className={styles.link}
+        style={{ "--link-color": color } as React.CSSProperties}
+        href={url}
+      >
         {name}
-      </StyledLink>
+      </a>
     </li>
   );
 };
