@@ -1,0 +1,10 @@
+.link {
+  opacity: 0.8;
+}
+
+.link:hover,
+.link:active {
+  opacity: 1;
+  color: var(--link-color);
+  text-decoration: underline;
+}
